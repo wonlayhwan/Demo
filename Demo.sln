@@ -3,9 +3,49 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2011
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo.Database", "Demo.Database", "{354D0781-CA12-4107-B829-F0E452C41151}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Database.Schema", "Demo.Database.Schema\Demo.Database.Schema.csproj", "{C4B69004-1C42-4490-AA7E-716972D08E1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Database.MSSQL", "Demo.Database.MSSQL\Demo.Database.MSSQL.csproj", "{EB8E9A5C-C755-474E-A006-187244703507}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Database.Infrastructure", "Demo.Database.Infrastructure\Demo.Database.Infrastructure.csproj", "{C94E635A-E875-45CB-BD73-65BFC0020197}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo.API.Cluster", "Demo.API.Cluster", "{F9D9C661-AACD-4F70-B640-34F1349315C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.API.MSSQL", "Demo.API.MSSQL\Demo.API.MSSQL.csproj", "{7C798F49-B36C-4AAD-AE6E-AEA1CEF6C0E0}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4B69004-1C42-4490-AA7E-716972D08E1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4B69004-1C42-4490-AA7E-716972D08E1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4B69004-1C42-4490-AA7E-716972D08E1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4B69004-1C42-4490-AA7E-716972D08E1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB8E9A5C-C755-474E-A006-187244703507}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB8E9A5C-C755-474E-A006-187244703507}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB8E9A5C-C755-474E-A006-187244703507}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB8E9A5C-C755-474E-A006-187244703507}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C94E635A-E875-45CB-BD73-65BFC0020197}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C94E635A-E875-45CB-BD73-65BFC0020197}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C94E635A-E875-45CB-BD73-65BFC0020197}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C94E635A-E875-45CB-BD73-65BFC0020197}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C798F49-B36C-4AAD-AE6E-AEA1CEF6C0E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C798F49-B36C-4AAD-AE6E-AEA1CEF6C0E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C798F49-B36C-4AAD-AE6E-AEA1CEF6C0E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C798F49-B36C-4AAD-AE6E-AEA1CEF6C0E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C4B69004-1C42-4490-AA7E-716972D08E1E} = {354D0781-CA12-4107-B829-F0E452C41151}
+		{EB8E9A5C-C755-474E-A006-187244703507} = {354D0781-CA12-4107-B829-F0E452C41151}
+		{C94E635A-E875-45CB-BD73-65BFC0020197} = {354D0781-CA12-4107-B829-F0E452C41151}
+		{7C798F49-B36C-4AAD-AE6E-AEA1CEF6C0E0} = {F9D9C661-AACD-4F70-B640-34F1349315C2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E9EAB27A-00AA-4431-B7F6-3B173AAAD193}
